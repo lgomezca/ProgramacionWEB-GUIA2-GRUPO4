@@ -96,10 +96,42 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   color: #fff;
   text-align: center;
+
 }
+
+
+/*Definimos la posicion del contenido en el  
+elemento <section> que esta dentro del banner*/
+.banner .contenedor{
+    position: absolute;
+     top: 50%;
+     left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    
+}
+
 
 .banner__txt {
   display: none;
+}
+
+.info__columna  .contacto{
+    margin-left: 180px;       
+    color: #fff;
+    text-decoration: none;
+    padding: 7px;   
+    border: 3px solid #fff;
+    
+     
+}
+
+/*Configuramos efecto al pasar el mouse sobre el
+elemento <a> que esta dentro de banner*/
+.info__columna  .contacto:hover{
+    background: rgba(51,51,51,0.5);
 }
 
 /*-----------------Estilos de info-----------------*/
@@ -122,8 +154,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   background: rgba(0,0,0,0.5);
   width: 60%;
-  height: 100%;
-  padding: 5px;
+  height: 91%;
+  padding: 15px;
 }
 .servicios__titulo {
   font-size: 25px;
@@ -195,7 +227,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 10px;
   }
 }
-@media(min-width:768px) {  
+@media(min-width:768px) {
   .banner__titulo {
     font-size: 50px;
   }
@@ -204,7 +236,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media(min-width:1024px) {  
+@media(min-width:1024px) {
   .contenedor {
     width: 1000px;
   }
@@ -248,6 +280,7 @@ h1, h2, h3, h4, h5, h6 {
   }
   .servicios__descripcion {
     padding: 20px;
+      
   }
   .servicios__titulo {
     font-size: 50px;
