@@ -131,7 +131,7 @@ elemento <section> que esta dentro del banner*/
 /*Configuramos efecto al pasar el mouse sobre el
 elemento <a> que esta dentro de banner*/
 .info__columna  .contacto:hover{
-    background: rgba(51,51,51,0.5);
+    background: rgba(210,210,210,0.5);
 }
 
 /*-----------------Estilos de info-----------------*/
