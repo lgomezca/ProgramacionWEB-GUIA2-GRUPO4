@@ -37,18 +37,17 @@
       <div class="contenedor-contacto">     
           <article class="info__columna__contacto">        
                 <form  class="formulario" id="registro"  >                      
-                       <input type="text" id="Nombre" class="formulario__input" placeholder="Pedro Diaz" required>     
-                       <input type="text" id="Empresa" class="formulario__input" placeholder="MyEmpresa" required> 
-					   <input type="email" id="Correo" class="formulario__input" placeholder="p_diaz@dominio.com" required>
-					   <h3>Escoja el servicio requerido<h3>
-					  
-					    <select id="Servicios" class="formulario__input" onchange="servicios()">
-						   <option value="Web">Web</option>
-						   <option value="Redes">Redes</option>
-						   <option value="Consultoria">Consultoria</option>
-						   <option value="Bases de Datos">Bases de Datos</option>
+                       <input type="text" id="Nombre" class="formulario__input" placeholder="Nombre" required>     
+                       <input type="text" id="Empresa" class="formulario__input" placeholder="Empresa" required> 
+					   <input type="email" id="Correo" class="formulario__input" placeholder="Correo Electronico" required>
+					   <h3>Escoja el Servicio Deseado<h3>
+					   <select id="Servicios" class="formulario__input" onchange="servicios()">
+						   <option value="Captaciones">Captaciones</option>
+						   <option value="Convenios de Recaudos y Pagos">Convenios de Recaudos y Pagos</option>
+						   <option value="Plataforma de Caja">Plataforma de Caja</option>
+						   <option value="Desarrollos a la Medida">Desarrollos a la Medida</option>
+						   <option value="Soporte y Mantenimiento">Soporte y Mantenimiento</option>
 					   </select> 
-					   
 					   <textarea class="formulario__input" rows="8" cols="80" placeholder="Escriba aquí su mensaje"required></textarea> 
                        <input type="submit" id="submit" class="formulario__submit">
                    </form>           
