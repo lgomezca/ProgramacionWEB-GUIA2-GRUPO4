@@ -28,37 +28,29 @@
     margin-bottom: 10px;
     border-radius: 4px;
     margin-left: 10px;   
-    color: #888;
-	font-size: 14px;
-	padding-right:30px;
-	-moz-transition: padding .25s; 
-	-webkit-transition: padding .25s; 
-	-o-transition: padding .25s;
-	transition: padding .25s;	
 }
 
 
 /*Cambiamos el color de borde los input al dar enfoque*/
 .formulario__input:focus{
     outline: 1px solid rgba(0,0,0,0.7);
-	
 }
 
 
 /*Definimos la aparicencia del input submit*/
 .formulario__submit{
     background:  rgba(0,0,0,0.7);    
-    color: blue;
+    color: white;
     padding: 15px 20px;
     cursor:pointer;
     border: 1px solid blue;;
+	border-radius: 4px;
+    width: 96%;
+	align-self: center;
 	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.85);
     background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#bbb));
-    background-image: -moz-linear-gradient(0% 100% 90deg, #BBBBBB, #FFFFFF);
+    background-image: -moz-linear-gradient(0% 100% 90deg, #BBBBBB, #0B0B3B);
     background-color: #fff;
-    border-radius: 4px;
-    width: 96%;
-    align-self: center;
 }
 
 
