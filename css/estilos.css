@@ -146,6 +146,13 @@ elemento <a> que esta dentro de banner*/
   margin-bottom: 30px;
 }
 
+.info__columna__servicios {
+  background: #091242;
+  color: #fff;
+  padding:  15px;
+  margin-bottom: 30px;
+}
+
 /*-----------------Estilos de servicios-----------------*/
 .servicios__columna {
   position: relative;
@@ -161,6 +168,15 @@ elemento <a> que esta dentro de banner*/
   height: 91%;
   padding: 15px;
 }
+.servicios__descripcion_no_back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  width: 60%;
+  height: 91%;
+  padding: 15px;
+}
 .servicios__titulo {
   font-size: 25px;
   margin: 5px 0;
@@ -168,6 +184,41 @@ elemento <a> que esta dentro de banner*/
 .servicios__img {
   width: 100%;
 }
+.servicios__img_1 {
+border-top:0px solid white;
+padding-top:20px;
+position:absolute;
+top:671px;
+left:249px;
+width:152px;
+opacity:1;
+}
+.servicios__img_2 {
+margin:-142px -83px;
+border:0px solid white;
+width:152px;
+position:absolute;
+padding:10px;
+}
+.servicios__img_3 {
+border-top:0px solid white;
+padding-top:20px;
+position:absolute;
+top:671px;
+right:249px;
+width:152px;
+opacity:1;
+}
+.info__txt_serv1 {
+border-top:1px solid white;
+padding-top:20px;
+position:absolute;
+top:873px;
+left:224px;
+width:900px;
+opacity:1;
+}
+
 /*-----------------Estilos de footer-----------------*/
 
 .footer {
@@ -277,6 +328,10 @@ elemento <a> que esta dentro de banner*/
   }
   .info__columna {
     padding: 30px;
+  }
+   }
+  .info__columna__servicios {
+    padding: 150px;
   }
   .info__titulo {
     font-size: 40px;
