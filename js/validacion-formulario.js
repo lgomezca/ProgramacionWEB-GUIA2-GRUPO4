@@ -1,4 +1,4 @@
-/*-----------------Funcion para  Validar campos vacios-----------------*/
+/*------------------Función para  Validar campos vacios-----------------*/
 /*jslint devel: true */
 /*jslint browser:true */
 function validarCamposFormulario() {
