@@ -2,12 +2,14 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-           <title>HD Solutions</title>
+        <title>HD Solutions</title>
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximun=1, minimum=1">
         <link rel="stylesheet" href="css/estilos.css">
         <link rel="stylesheet" href="css/estilos-contacto.css">
         <link rel="stylesheet" href="css/fontello.css">
-		<script type="text/javascript" src="js/servicios.js"></script>
+        <script type="text/javascript" src="registrar-info.js"></script>
+        <!--Vinculación de archivo javascript-->
+        <script src="js/validacion-formulario.js"></script>
     </head>
     <body>
      <header class="header">
@@ -16,7 +18,7 @@
         <span class="icon-menu" id="btn-menu"></span>
         <nav class="nav" id="nav">
           <ul class="menu">
-            <li class="menu__item"><a href="/" class="menu__link select">Inicio</a></li>
+            <li class="menu__item"><a href="index.html" class="menu__link select">Inicio</a></li>
             <li class="menu__item"><a href="nosotros.html" class="menu__link">Nosotros</a></li>
             <li class="menu__item"><a href="servicios.html" class="menu__link">Servicios</a></li>
             <li class="menu__item"><a href="clientes.html" class="menu__link">Clientes</a></li>
@@ -27,33 +29,27 @@
     <div class="banner">
      <img src="img/hdsolutions.jpeg" alt="">
       <div class="contenedor">
-        <h2 class="banner__titulo">Contáctanos</h2>
+        <h2 class="banner__titulo">Contactanos</h2>
         <p class="banner__txt">
-            Envíanos tus preguntas o comentarios :       
+            Envianos tus preguntas o comentarios
         </p>
       </div>
     </div>
     <main class="main">
-      <div class="contenedor-contacto">     
-          <article class="info__columna__contacto">        
-                <form  class="formulario" id="registro"  >                      
-                       <input type="text" id="Nombre" class="formulario__input" placeholder="Nombre" required>     
-                       <input type="text" id="Empresa" class="formulario__input" placeholder="Empresa" required> 
-					   <input type="email" id="Correo" class="formulario__input" placeholder="Correo Electronico" required>
-					   <h3>Escoja el Servicio Deseado<h3>
-					   <select id="Servicios" class="formulario__input" onchange="servicios()">
-						   <option value="Captaciones">Captaciones</option>
-						   <option value="Convenios de Recaudos y Pagos">Convenios de Recaudos y Pagos</option>
-						   <option value="Plataforma de Caja">Plataforma de Caja</option>
-						   <option value="Desarrollos a la Medida">Desarrollos a la Medida</option>
-						   <option value="Soporte y Mantenimiento">Soporte y Mantenimiento</option>
-					   </select> 
-					   <textarea class="formulario__input" rows="8" cols="80" placeholder="Escriba aquí su mensaje"required></textarea> 
-                       <input type="submit" id="submit" class="formulario__submit">
-                   </form>           
-          </article>       
+      <div class="contenedor-contacto">
+          <article class="info__columna__contacto">
+                <form  class="formulario" id="registro"   onsubmit=" return validarCamposFormulario()">
+                       <input type="text" id="Nombre" class="formulario__input" placeholder="Nombre" >
+                       <input type="text" id="Telefono" class="formulario__input" placeholder="Telefono" >
+                       <input type="text" id="Empresa" class="formulario__input" placeholder="Empresa" >
+                       <input type="email" id="Correo" class="formulario__input" placeholder="Correo Electronico"  >
+                       <textarea id="Comentarios" class="formulario__input" rows="8" cols="80" ></textarea>
+                       <input type="submit" id="submit" class="formulario__submit" onclick="crearNuevoRegistro()">
+                </form>
+          </article>
+          <div id="padre"></div>
       </div>
-    </main> 	
+    </main>
     <footer class="footer">
       <div class="contenedor">
         <div class="social">
@@ -61,6 +57,7 @@
           <a href="#" class="icon-twitter"></a>
           <a href="#" class="icon-gplus"></a>
         </div>
+        <p>Direccion: Cra 57 # 11 A 50. Cali - Celular 3052604849 -  Correo hd.solutions.sas@gmail.com </p>
         <p class="copy">&copy; H.D. Solutions derechos reservados </p>
       </div>
     </footer>

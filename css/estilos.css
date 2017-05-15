@@ -1,48 +1,65 @@
+/*Importacion de fuentes externas desde GoogleFonts*/
 @import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Yanone+Kaffeesatz');
 
+/*Definicion del tipo de fuente para la pagina*/
 family=Open+Sans';
+
+/*Definimos estilo de caja para toda la estructura */
 * {
   box-sizing: border-box;
 }
+
+/*Definimos propiedades de la imagen principal en el banner*/
 img {
   display: block;
-    width: 100%;
+  width: 100%;
   max-width: 100%;
 }
+
+/*Definimos margenes y fuente de las estructuas dentro del body*/
 body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
 }
+
+/*Definimos tipo de fuente para titulos de encabezados*/
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Yanone Kaffeesatz', sans-serif;
   letter-spacing: 1.5px;
 }
 
-a {
-    color: white;
-}
+/*definimos propiedades para section servicios*/
 .section__titulo {
   text-align: center;
   font-size: 40px;
   color: #091242;
 }
+
+/*definimos tamaño y margen para el div que contiene los section*/
 .contenedor {
   margin: auto;
   width: 99%;
 }
+
 /*-------------------Estilos del header-------------------*/
 .header {
   height: 60px;
 }
+
+/*Definimos forma de presentacion y alineacion del header*/
 .header .contenedor {
   display: flex;
   justify-content: space-between;
 }
+
+/*Definimos margen y color de fuente de logo y menu*/
 .logo, .icon-menu {
   margin: 5px;
   color: #fff;
 }
+
+/*Definimos apariencia del icono de menu*/
 .icon-menu {
   display: block;
   width: 40px;
@@ -55,6 +72,7 @@ a {
   margin-left: auto;
   cursor: pointer;
 }
+
 /*------------------Estilos del menu------------------*/
 .nav {
   position: absolute;
@@ -63,11 +81,15 @@ a {
   width: 100%;
   transition: all 0.4s;
 }
+
+/*Definimos etilo, margen interno y margenes externos del menu*/
 .menu {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
+/*Definimos propiedades de apariencia del menu*/
 .menu__link {
   display: block;
   padding: 15px;
@@ -75,10 +97,14 @@ a {
   text-decoration: none;
   color: #fff;
 }
+
+/*Definimos efecto al pasar mouse sobre el menu*/
 .menu__link:hover, .select {
   background: white;
   color: #091242;
 }
+
+/*Alienamos el menu a la izquierda*/
 .mostrar {
   left: 0;
 }
@@ -168,6 +194,7 @@ elemento <a> que esta dentro de banner*/
 .servicios__img {
   width: 100%;
 }
+
 /*-----------------Estilos de footer-----------------*/
 
 .footer {
@@ -191,6 +218,8 @@ elemento <a> que esta dentro de banner*/
 }
 
 /*------------------Estilos responsive------------------*/
+/* Definimos la alineacion y orden de los elementos     */
+/* al cambiar el tamaño de pantalla                     */
 
 @media(min-width:480px) {
   .logo {
@@ -231,6 +260,7 @@ elemento <a> que esta dentro de banner*/
     margin: 0 10px;
   }
 }
+
 @media(min-width:768px) {
   .banner__titulo {
     font-size: 50px;
