@@ -1,7 +1,7 @@
 /* Definimos las propiedades para la apariencia del formulario */
 .formulario{
     width: 700px;
-    height: 450px;
+    height: auto;
     max-width: 100%;
     margin: auto;
     margin-top: -350px;

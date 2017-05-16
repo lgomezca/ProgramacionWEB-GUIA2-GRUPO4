@@ -40,9 +40,19 @@
                 <form  class="formulario" id="registro"   onsubmit=" return validarCamposFormulario()">
                        <input type="text" id="Nombre" class="formulario__input" placeholder="Nombre" >
                        <input type="text" id="Telefono" class="formulario__input" placeholder="Telefono" >
-                       <input type="text" id="Empresa" class="formulario__input" placeholder="Empresa" >
                        <input type="email" id="Correo" class="formulario__input" placeholder="Correo Electronico"  >
-                       <textarea id="Comentarios" class="formulario__input" rows="8" cols="80" ></textarea>
+                       <input type="text" id="Empresa" class="formulario__input" placeholder="Empresa" >                       
+                       <select id="Servicio" class="formulario__input" onchange  =" verElementos(this.value); limpiarElementos(); validarElementos();" >
+      <option value="">Seleccione el tipo de servicio</option>
+      <option value="1">Captaciones</option>
+      <option value="2">Convenios de Recaudos y Pagos</option>
+      <option value="3">Plataforma de Caja</option>
+      <option value="4">Desarrollos a la medida</option>
+      <option value="5">Soporte y Mantenimiento</option>  
+      <option value="6">Otros</option>    
+    </select>
+                       <textarea id="Comentarios" class="formulario__input" rows="8" cols="80" >
+                       </textarea>
                        <input type="submit" id="submit" class="formulario__submit" onclick="crearNuevoRegistro()">
                 </form>
           </article>         
