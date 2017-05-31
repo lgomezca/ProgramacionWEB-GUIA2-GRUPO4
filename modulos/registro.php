@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Registration Form</title>
-  <link rel="stylesheet" href="../css/style-login.css">  
+  <link rel="stylesheet" href="../css/style-ingreso.css">  
 </head>
 <body>
   <h1 class="register-title">Bienvenido</h1>
-  <form name="formIngreso" id="formulario-ingreso" class="register" method="POST" onsubmit="return  validarElementos()">   
+  <form name="formIngreso" id="formulario-ingreso" class="register" method="POST" action="" onsubmit="return  validarElementos()">   
     <div class="register-switch">
       <input type="radio" name="tpingreso" value="l" id="login" class="register-switch-input" checked onc onclick="verElementos(this.value);limpiarElementos()">
       <label for="login" class="register-switch-label">Ingreso</label>
@@ -23,5 +23,6 @@
     <input type="submit" value="Ingresar" class="register-button"  >
   </form>
 </body>
-<script src="../js/validar-elementos.js"></script>  
+<script src="../js/validar-ingreso.js"></script>  
 </html>
+<? include_once('../funciones/registro-usuarios.php'); ?>
