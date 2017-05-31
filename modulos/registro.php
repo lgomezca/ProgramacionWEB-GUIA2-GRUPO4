@@ -25,4 +25,7 @@
 </body>
 <script src="../js/validar-ingreso.js"></script>  
 </html>
-<? include_once('../funciones/registro-usuarios.php'); ?>
+<? echo $msj; 
+include_once('../funciones/registro-usuarios.php'); 
+ 
+?>
