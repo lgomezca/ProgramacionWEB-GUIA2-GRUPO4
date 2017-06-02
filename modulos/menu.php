@@ -18,7 +18,7 @@ if(!isset($_SESSION['nmbUsr'])){ header('location:registro.php');}
         <label for="btn-menu"><img src="icono-menu2.png" alt=""></label>
         <nav class="menu">
           <ul>
-            <li><a href="../index.html" target="dinamico">Inicio</a></li>
+            <li><a href="index.php" target="dinamico">Inicio</a></li>
             <li><a href="vista.php?pag=2" target="dinamico">Clientes</a></li>
             <li><a href="vista.php?pag=3" target="dinamico">Usuarios</a></li>    
             <li><a href="vista.php?pag=4">Salir</a></li>
