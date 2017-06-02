@@ -7,6 +7,8 @@ if($_GET['pag']==1){
     include_once('consulta-usuarios.php'); 
 }elseif($_GET['pag']==4){
     include_once('logout.php'); 
+}elseif($_GET['pag']==5){
+    include_once('libreta.php'); 
 }else{
     include_once('consulta-clientes.php'); 
 }

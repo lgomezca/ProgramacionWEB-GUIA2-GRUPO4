@@ -20,7 +20,8 @@ if(!isset($_SESSION['nmbUsr'])){ header('location:registro.php');}
           <ul>
             <li><a href="index.php" target="dinamico">Inicio</a></li>
             <li><a href="vista.php?pag=2" target="dinamico">Clientes</a></li>
-            <li><a href="vista.php?pag=3" target="dinamico">Usuarios</a></li>    
+            <li><a href="vista.php?pag=3" target="dinamico">Usuarios</a></li>
+            <li><a href="vista.php?pag=5" target="dinamico">Libreta</a></li>    
             <li><a href="vista.php?pag=4">Salir</a></li>
           </ul>
         </nav>
