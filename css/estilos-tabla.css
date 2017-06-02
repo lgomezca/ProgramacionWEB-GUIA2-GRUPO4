@@ -1,0 +1,72 @@
+body{
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+h3{
+   text-align: left;
+}
+.contenedor{
+   
+display: inline-table;
+width:60%;
+margin-left: 60px;   
+  
+    /*
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    */
+}
+
+table{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border: 1px solid #e3e7fa;
+    /*border-radius:10px;*/
+    /*box-shadow: 0 0 1px 1px rgba(0,0,0,0.3);*/
+    font-size: 12px;
+
+  }
+
+
+fieldset{
+  border:1px solid rgb(177, 177, 177);
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 3px 3px 10px #ccc;
+  margin-bottom: 30px;
+}
+
+legend{
+  background: #597081;
+  color: rgba(255, 255, 255, 0.95);
+  border-radius: 3px;
+  box-shadow: 3px 3px 0 0 rgba(53,53,53,0.3);
+  padding: 7px;
+  top: -11px;
+  -moz-box-shadow: 2px 2px 4px #888;
+  -webkit-box-shadow: 2px 2px 2px #888;
+  text-shadow: 1px 1px 1px #333;
+
+}
+
+/*Definimos color para los encabezos de la tabla*/
+ table th{
+    background: #f4f4f4;
+    text-align: center;    
+}
+
+/*Definimos los bordes de la tabla*/
+table, td{
+    border-collapse: collapse;
+    text-align: center;
+   
+}
+
+tbody tr:hover{
+    background: #99c4b0;
+    color: #fff;
+    cursor: pointer;
+}
+

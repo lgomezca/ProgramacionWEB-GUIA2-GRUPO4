@@ -1,0 +1,13 @@
+<?
+if($_GET['pag']==1){
+    include_once('../index.php');    
+}elseif($_GET['pag']==2){
+    include_once('consulta-clientes.php'); 
+}elseif($_GET['pag']==3){
+    include_once('consulta-usuarios.php'); 
+}elseif($_GET['pag']==4){
+    include_once('logout.php'); 
+}else{
+    include_once('consulta-clientes.php'); 
+}
+?>

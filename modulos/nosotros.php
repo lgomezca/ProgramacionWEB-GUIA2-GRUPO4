@@ -4,8 +4,8 @@
         <meta charset="utf-8">
            <title>HD Solutions</title>
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximun=1, minimum=1">
-        <link rel="stylesheet" href="css/estilos.css">
-        <link rel="stylesheet" href="css/fontello.css">
+        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="stylesheet" href="../css/fontello.css">
     </head>
     <body>
      <header class="header">
@@ -14,20 +14,21 @@
         <span class="icon-menu" id="btn-menu"></span>
         <nav class="nav" id="nav">
           <ul class="menu">
-            <li class="menu__item"><a href="index.html" class="menu__link ">Inicio</a></li>
-            <li class="menu__item"><a href="nosotros.html" class="menu__link select ">Nosotros</a></li>
-            <li class="menu__item"><a href="servicios.html" class="menu__link">Servicios</a></li>
-            <li class="menu__item"><a href="clientes.html" class="menu__link ">Clientes</a></li>
+            <li class="menu__item"><a href="index.php" class="menu__link ">Inicio</a></li>
+            <li class="menu__item"><a href="nosotros.php" class="menu__link select ">Nosotros</a></li>
+            <li class="menu__item"><a href="servicios.php" class="menu__link">Servicios</a></li>
+            <li class="menu__item"><a href="clientes.php" class="menu__link ">Clientes</a></li>
+            <li class="menu__item"><a href="registro.php" class="menu__link ">Empleados</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <div class="banner">
-     <img src="img/nuestro_equipo.png" alt="">
+       <div class="banner">
+     <img src="../img/nuestro_equipo.png" alt="">
       <div class="contenedor">
         <h2 class="banner__titulo">Nuestra empresa</h2>
         <p class="banner__txt">Cuentanos tu proyecto y te ayudaremos a realizarlo
-
+        <? include_once('../funciones/contador.php');?>   
         </p>
       </div>
     </div>
@@ -40,7 +41,7 @@
 
              </p>
           <div class="servicios__columna">
-            <img src="img/mision2.JPG" alt="" class="servicios__img">
+            <img src="../img/mision2.JPG" alt="" class="servicios__img">
             <div class="servicios__descripcion">
               <h2 class="servicios__titulo">Misión</h2>
               <div class="servicios__txt">Seguir experimentando cosas nuevas e innovadoras. Es por esto que estamos comprometidos a crear nuevos ecosistemas que potencien el negocio de nuestros clientes, haciéndonos una alternativa atractiva para el desarrollo de sus proyectos, mediante  la creación de soluciones sencillas y creativas. 
@@ -49,21 +50,21 @@
             </div>
           </div>
           <div class="servicios__columna">
-            <img src="img/Vision2.jpg" alt="" class="servicios__img">
+            <img src="../img/Vision2.jpg" alt="" class="servicios__img">
             <div class="servicios__descripcion">
               <h2 class="servicios__titulo">Visión</h2>
               <div class="servicios__txt">Para el año 2018 HD Solutions consolidará su estrategia de expansión en sus servicios de consultoría, implementación, outsourcing y capacitación en arquitectura orientada a servicios. También será reconocida a nivel nacional como proveedora de productos y servicios de ingeniería de software innovadores que transforman la manera de trabajar. </div>
             </div>
           </div>
           <div class="servicios__columna">
-            <img src="img/calidad.jpg" alt="" class="servicios__img">
+            <img src="../img/calidad.jpg" alt="" class="servicios__img">
             <div class="servicios__descripcion">
               <h2 class="servicios__titulo">Politica de Calidad</h2>
               <div class="servicios__txt">En HD Solutions proveemos servicios de Ingeniería de Software, Capacitación y Consultoría, comprometidos en crear soluciones innovadoras y alineadas a los requisitos de nuestros clientes con un alto nivel de satisfacción a través del mejoramiento continuo de los procesos y el desarrollo de nuestro capital humano.​</div>
             </div>
           </div>
           <div class="servicios__columna">
-            <img src="img/posicionamiento.jpg" alt="" class="servicios__img">
+            <img src="../img/posicionamiento.jpg" alt="" class="servicios__img">
             <div class="servicios__descripcion">
               <h2 class="servicios__titulo">Posicionamiento</h2>
               <div class="servicios__txt">HD Solutions ha prestado sus productos y servicios en diferentes empresas del sector financiero a novel nacional destacándose por sus altos estándares de calidad, logrando la satisfacción de sus clientes constituyendo así casos de éxito.</div>
@@ -85,6 +86,6 @@
       </div>
     </footer>
     <!--llamada a menu-->
-    <script src="js/menu.js"></script>
+    <script src="../js/menu.js"></script>
     </body>
 </html>

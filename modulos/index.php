@@ -4,8 +4,15 @@
         <meta charset="utf-8">
            <title>HD Solutions</title>
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximun=1, minimum=1">
-        <link rel="stylesheet" href="css/estilos.css">
-        <link rel="stylesheet" href="css/fontello.css">
+        <link rel="stylesheet" href="../css/estilos.css">
+        <link rel="stylesheet" href="../css/fontello.css">
+        <script>
+            function quitarFrame() {
+                if(self.parent.frames.length!=0)
+                  self.parent.location=document.location.href;
+            }
+           quitarFrame();
+        </script>  
     </head>
     <body>
      <header class="header">
@@ -14,20 +21,22 @@
         <span class="icon-menu" id="btn-menu"></span>
         <nav class="nav" id="nav">
           <ul class="menu">
-            <li class="menu__item"><a href="/" class="menu__link select">Inicio</a></li>
-            <li class="menu__item"><a href="nosotros.html" class="menu__link">Nosotros</a></li>
-            <li class="menu__item"><a href="servicios.html" class="menu__link">Servicios</a></li>
-            <li class="menu__item"><a href="clientes.html" class="menu__link">Clientes</a></li>
+            <li class="menu__item"><a href="#" class="menu__link select">Inicio</a></li>
+            <li class="menu__item"><a href="nosotros.php" class="menu__link">Nosotros</a></li>
+            <li class="menu__item"><a href="servicios.php" class="menu__link">Servicios</a></li>
+            <li class="menu__item"><a href="clientes.php" class="menu__link">Clientes</a></li>
+            <li class="menu__item"><a href="registro.php" class="menu__link ">Empleados</a></li>
           </ul>
         </nav>
       </div>
     </header>
     <div class="banner">
-     <img src="img/hdsolutions.jpeg" alt="">
+     <img src="../img/hdsolutions.jpeg" alt="">
       <div class="contenedor">
         <h2 class="banner__titulo">La mejor solución para tu empresa</h2>
         <p class="banner__txt">
-            Cuentanos tu proyecto y te ayudaremos a realizarlo        
+            Cuentanos tu proyecto y te ayudaremos a realizarlo 
+            <? include_once('../funciones/contador.php');?>        
         </p>
       </div>
     </div>
@@ -35,27 +44,27 @@
       <div class="contenedor">
         <section class="info">
           <article class="info__columna">
-            <img src="img/equipo.jpg">
+            <img src="../img/equipo.jpg">
             <h2 class="info__titulo">Equipo</h2>
             <p class="info__txt">Contamos con un equipo de profesionales altamente capacitados y avalados por una trayectoria de más de 20 años en cada una de sus especialidades.</p>
           </article>
           <article class="info__columna">
-            <img src="img/clientes2.jpeg" alt="" class="info__img">
+            <img src="../img/clientes2.jpeg" alt="" class="info__img">
             <h2 class="info__titulo">Clientes</h2>
             <p class="info__txt">Fruto de nuestra experiencia en la consultoría y desarrollo de software a la medida, son muchas las empresas y entidades que nos han otorgado su confianza y reconocimiento.</p>
           </article>
           <article class="info__columna">
-            <img src="img/servicioalcliente2.png" alt="" class="info__img">
+            <img src="../img/servicioalcliente2.png" alt="" class="info__img">
             <h2 class="info__titulo">Atención al cliente</h2>
             <p class="info__txt">Nuestro objetivo es un cliente feliz. Queremos que nuestro Servicio sea el diferenciador que nos distinga en el Mercado.
              </p>
-             <a href="contacto.html" class="contacto">Contacto</a>
+             <a href="contacto.php" class="contacto">Contacto</a>
           </article>
         </section>
         <section class="servicios">
           <h2 class="section__titulo">Nuestros servicios</h2>
           <div class="servicios__columna">
-            <img src="img/Consultoria-y-Capacitacion.jpg" alt="" class="servicios__img">
+            <img src="../img/Consultoria-y-Capacitacion.jpg" alt="" class="servicios__img">
             <div class="servicios__descripcion">
               <h2 class="servicios__titulo">Captaciones</h2>
               <div class="servicios__txt">Facilita la administración de cuentas corriente, cuentas de ahorro y depósitos a término.
@@ -64,21 +73,21 @@
             </div>
           </div>
           <div class="servicios__columna">
-            <img src="img/caja.jpg" alt="" class="servicios__img">
+            <img src="../img/caja.jpg" alt="" class="servicios__img">
             <div class="servicios__descripcion">
               <h2 class="servicios__titulo">Convenios y Recaudo de pagos</h2>
               <div class="servicios__txt">Se facilita los pagos de impuestos y servicios públicos, asi como convenios empresariales. </div>
             </div>
           </div>
           <div class="servicios__columna">
-            <img src="img/pagando-caja.jpg" alt="" class="servicios__img">
+            <img src="../img/pagando-caja.jpg" alt="" class="servicios__img">
             <div class="servicios__descripcion">
               <h2 class="servicios__titulo">Plataforma de Caja</h2>
               <div class="servicios__txt">Administracion de Consignaciones, retiros, constitución de productos, transferencias, traslados de efectivo, cuadres de caja.</div>
             </div>
           </div>
           <div class="servicios__columna">
-            <img src="img/desarrollos.jpg" alt="" class="servicios__img">
+            <img src="../img/desarrollos.jpg" alt="" class="servicios__img">
             <div class="servicios__descripcion">
               <h2 class="servicios__titulo">Desarrollos a la medida</h2>
               <div class="servicios__txt">Análisis, diseño, desarrollo, implementación y soporte de soluciones .</div>
@@ -100,6 +109,6 @@
       </div>
     </footer>
     <!--llamada a menu-->
-    <script src="js/menu.js"></script>
+    <script src="../js/menu.js"></script>
     </body>
 </html>
