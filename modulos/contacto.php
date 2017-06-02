@@ -7,8 +7,12 @@
         <link rel="stylesheet" href="../css/estilos.css">
         <link rel="stylesheet" href="../css/estilos-contacto.css">
         <link rel="stylesheet" href="../css/fontello.css">
+		<link rel="stylesheet" media="screen" href="../css/estilo_maps.css" >
         <!--Vinculación de archivo javascript-->
         <script src="../js/validacion-formulario.js"></script>
+		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<script src="../Jquery/jquery-3.2.1.js"></script>  
+		<script src="../js/jquery.gomap-1.3.2.min.js"></script>
     </head>
     <body>
      <header class="header">
@@ -57,8 +61,40 @@
                        </textarea>
                        <input type="submit" id="submit" class="formulario__submit" onclick="crearNuevoRegistro()">
                 </form>
-          </article>
-      </div>
+<script>
+      $(document).ready(function() {
+
+        $("#mapa").goMap({
+        
+		    latitude:3.4052559,
+			longitude:-76.5408343,
+			zoom:15,
+			maptype:"TERRAIN",
+			scaleControl:true
+			
+         });
+
+		 $.goMap.createMarker({
+		    
+			latitude:3.4052559,
+			longitude:-76.5408343,
+			title:"HD Solutions",
+			html:{
+			     content:"<h6>Cra 57 # 11A 50 - Cali</h6>",
+				 popup:true
+		        }
+				 
+		 });
+				     
+       });
+	   
+</script>
+      <div class="banner__txt">
+	    <h7>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		Contactatanos en nuestra oficina</h7>
+	  </div>
+	  <div id= "mapa"></div>
+          </div>
     </main>
     <footer class="footer">
       <div class="contenedor">
