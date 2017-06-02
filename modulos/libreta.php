@@ -23,9 +23,9 @@ include_once('../funciones/paginacion-clientes.php'); ?>
      <form  action="" name="libreta" class="libreta" id="libreta" method="post">
          <div class="register-switch">
       <input type="radio" name="tpingreso" value="r" id="login" class="register-switch-input" checked onc onclick="verElementos(this.value);limpiarElementos()">
-      <label for="login" class="register-switch-label">Registro</label>
+      <label for="login" class="register-switch-label">Registro Contacto</label>
       <input type="radio" name="tpingreso" value="c" id="register" class="register-switch-input" onclick=" verElementos(this.value);limpiarElementos()">
-      <label for="register" class="register-switch-label">Consulta</label>
+      <label for="register" class="register-switch-label">Consulta Contacto</label>
       
     </div>
           <p><label for="" class="registrar">Grupo</label>
