@@ -1,0 +1,22 @@
+ 
+#mapa {
+	      height:500px;
+		  width:500px;
+		  border: solid blue;
+          border-top-width: 2px;
+          border-left-width: 2px;
+          left: 400px;
+		  line-height:90px;
+		  padding: 15px;
+	 }
+
+h7 {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  letter-spacing: 4px;
+  transform: translate(-50%, -50%);
+  height: 200px;
+  width: 400px;
+  text-align: center;
+
+}	 
+
