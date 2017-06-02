@@ -10,7 +10,7 @@
 		<link rel="stylesheet" media="screen" href="../css/estilo_maps.css" >
         <!--Vinculación de archivo javascript-->
         <script src="../js/validacion-formulario.js"></script>
-		<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB8SjNte50K5A2z5cr1XDksK-DIemVogXg"></script>
 		<script src="../Jquery/jquery-3.2.1.js"></script>  
 		<script src="../js/jquery.gomap-1.3.2.min.js"></script>
     </head>
